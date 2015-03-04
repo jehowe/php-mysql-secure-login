@@ -11,8 +11,8 @@ $password = $_POST['password'];
 
 /* ***uncomment and use this code block if the server is running PHP 5.4***
 
-// create function to create hash, forcing the use of blowfish encryption, rounds = 7, increase if the server can handle it
-function better_crypt($input, $rounds = 7)   // force the encryption to use blowfish, w/ 22 char salt & 7 rounds
+// create function to create hash, forcing the use of blowfish encryption, rounds = 10, increase if the server can handle it
+function better_crypt($input, $rounds = 10)   // force the encryption to use blowfish, w/ 22 char salt & 7 rounds
 {
 $salt = "";
 $salt_chars = array_merge(range('A','Z'), range('a','z'), range(0,9));
